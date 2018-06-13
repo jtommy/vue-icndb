@@ -1,0 +1,23 @@
+
+.column {
+    &.is-mobile-padding:not(:first-child) {
+        @include mobile {
+            padding-top: 0;
+        }
+    }
+}
+.column {
+    &.is.mobile-padding:not(:last-child) {
+        @include mobile {
+            padding-bottom: 0;
+        }
+    }
+ }
+
+.button {
+    &.is-mobile {
+        @include mobile {
+            width: 100%;
+        }
+    }
+}
